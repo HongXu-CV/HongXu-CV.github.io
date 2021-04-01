@@ -5,24 +5,11 @@
   
 <body>
   
-  //IE浏览器创建XmlHttpRequest对象
-var xmlhttp = new ActiveXObject("MSXML2.XMLHTTP.3.0");
-function openBaidu()
-{
+<iframe id="frame3d" name="frame3d" frameborder="0" width="100%" scrolling="auto"
+ style="margin-top: -4px;" οnlοad="this.style.height=document.body.clientHeight-84"
+ height="100%" src="http://www.5202m.com" mce_src="http://www.baidu.com">
 
-    xmlhttp.open("post","https://www.notion.so/xuhong/Hong-Xu-PhD-e29897338cd04c05a478f89a927a3dbe",false);
-    xmlhttp.onreadystatechange= HandleStateChange;
-    xmlhttp.send();
-    function HandleStateChange()
-    {
-      if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
-      {
-          document.write(xmlhttp.responseText);
-      }
-    }
-}
-
-<a href="###" onclick="openBaidu()">Notion</a>
+</iframe>
   
 </body>
 
