@@ -1,9 +1,29 @@
-<html><head>
-  <title>In Progress...</title>
-  <meta http-equiv="refresh" content="0;url=https://drxu.eu.org/project/test">
+<html>
+  <head>
+    <title>In Progress...</title>
   </head>
+  
 <body>
-<script language='javascript'>document.location = 'https://www.notion.so/xuhong/Hong-Xu-PhD-e29897338cd04c05a478f89a927a3dbe'</script>
+  
+  //IE浏览器创建XmlHttpRequest对象
+var xmlhttp = new ActiveXObject("MSXML2.XMLHTTP.3.0");
+function openBaidu()
+{
+
+    xmlhttp.open("post","https://www.notion.so/xuhong/Hong-Xu-PhD-e29897338cd04c05a478f89a927a3dbe",false);
+    xmlhttp.onreadystatechange= HandleStateChange;
+    xmlhttp.send();
+    function HandleStateChange()
+    {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+      {
+          document.write(xmlhttp.responseText);
+      }
+    }
+}
+
+<a href="###" onclick="openBaidu()">Notion</a>
+  
 </body>
 
 
